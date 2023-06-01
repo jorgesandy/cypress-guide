@@ -31,5 +31,5 @@ jobs:
         run: sleep 10
 
       - name: Run Vue.js tests
-        working-directory: ./proyecto-vuejs
+        working-directory: ./
         run: npm run test:e2e
