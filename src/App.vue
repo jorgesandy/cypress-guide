@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img src="./assets/logo.png">
+    <LoginComponent />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LoginComponent from './components/LoginComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LoginComponent
   }
 }
 </script>
 
 <style>
+body {
+  background-color: rgb(250, 252, 146);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #35495e;
   margin-top: 60px;
 }
 </style>
