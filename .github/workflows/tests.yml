@@ -23,6 +23,10 @@ jobs:
         working-directory: ./service
         run: npm install
 
+      - name: Launche Vue App
+        working-directory: ./
+        run: npm run serve
+
       - name: Run Node.js server
         working-directory: ./service
         run: npm start &
