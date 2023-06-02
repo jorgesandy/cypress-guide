@@ -42,3 +42,12 @@ jobs:
 
       - name: Run Vue.js tests
         run: npm run test:e2e
+
+      - name: Check test results
+        run: |
+          if [ ${{ steps.build-and-test.outcome }} == 'failure' ]; then
+            echo "Tests failed. Rejecting pull request..."
+            exit 1
+          else
+            echo "Tests passed. Pull request can be merged."
+          fi
