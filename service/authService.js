@@ -13,7 +13,7 @@ app.post('/login', (req, res) => {
   console.log('password: ', password)
 
 
-  if (username === 'usuario_mal' && password === '123456') {
+  if (username === 'usuario' && password === '123456') {
     console.log("logged correctly")
     res.json({ success: true, message: 'Inicio de sesión exitoso' });
   } else {
