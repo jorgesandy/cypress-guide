@@ -7,7 +7,7 @@
         </div>
 
         <form @submit="submitForm">
-            <label for="username">User</label>
+            <label for="username">Your User</label>
             <input type="text" placeholder="Type your username" id="username" v-model="username" required>
 
             <label for="password">Password</label>
